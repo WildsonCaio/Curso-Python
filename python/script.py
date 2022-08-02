@@ -45,6 +45,8 @@ bool #boleano
 #while=enquanto
 #while True
 #break parar
+#for i in range(0,100) intervalo
+#for i in range(0,100,salto)
 
 #Atribuicao
 nome = "Caio"
