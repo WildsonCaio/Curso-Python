@@ -14,7 +14,7 @@ divorciado  = "d"
 
 nome = str (input("Qual seu nome?"))
 while len(nome) <3:
-    nome = str input ("Insira nome valido")
+    nome = str (input("Insira nome valido"))
 
 
 idade = int (input("Qual sua idade?"))
