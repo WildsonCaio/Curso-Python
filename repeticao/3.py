@@ -14,11 +14,11 @@ divorciado  = "d"
 
 nome = str (input("Qual seu nome?"))
 while len(nome) <3:
-    nome = str input ("Insira nome valido")
+    nome = str (input("Insira nome valido"))
 
 
 idade = int (input("Qual sua idade?"))
-if idade > 0 and idade < 70:
+if idade > 0 and idade < 150:
     print ("Idade valida")
 
 salario = float (input("Qual seu salario?"))
