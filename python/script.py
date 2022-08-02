@@ -41,6 +41,11 @@ bool #boleano
 #"{}".format ()
 #f("{}")
 
+#Repetição
+#while=enquanto
+#while True
+#break parar
+
 #Atribuicao
 nome = "Caio"
 print (nome)
