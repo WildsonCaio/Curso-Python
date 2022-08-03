@@ -33,3 +33,11 @@ elif sexo == "f":
     print("é feminino")
 
 estado_civil = str (input("Qual estado civil?"))
+if estado_civil =="s":
+    print ("solteiro") 
+if estado_civil =="c":
+    print ("casado") 
+if estado_civil =="d":
+    print ("divorciado") 
+if estado_civil =="v":
+    print ("viúvo") 
