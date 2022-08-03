@@ -41,12 +41,27 @@ bool #boleano
 #"{}".format ()
 #f("{}")
 
+# ([]) apresenta posicao de caracter
+
+
 #Repetição
 #while=enquanto
 #while True
 #break parar
 #for i in range(0,100) intervalo
 #for i in range(0,100,salto)
+
+#lista
+#append adiciona item a lista
+#extend junta lista
+#insert adiciona e posicao especifica
+#remove intem especifico da lista
+#pop remove ultimo item da lista (retorna elemento removido)
+#clear limpa lista
+#count conta numero especifico de mesmo item na lista
+#sort organiza em ordem alfabetica (inverso (reverse=True)
+
+
 
 #Atribuicao
 nome = "Caio"
