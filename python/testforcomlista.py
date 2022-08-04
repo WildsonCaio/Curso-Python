@@ -5,5 +5,6 @@ for i in range(0,3):
     lista.append(numero)
     
 lista.sort()
+print(lista)
 lista.sort(reverse=True)
 print(lista)
