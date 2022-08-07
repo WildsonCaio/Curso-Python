@@ -35,6 +35,7 @@ bool #boleano
 
 #Formatação
 #.format
+#eval converte para string
 
 #Concatenação
 #,
