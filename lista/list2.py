@@ -1,14 +1,7 @@
-numero = [1,2,3,4,5,6,7,8,9,10]
-par=[]
-imp=[]
-for item in numero:
-    if item%2:
-        imp.append(item)
-    
-    else:
-        par.append(item)
+lista=[]
 
-print()
-print (f"Numeros impares: {imp}")
-print()
-print (f"Numeros pares: {par}")
+for i in range(0,10):
+    numero=float (input("Insira numero: "))
+    lista.append(numero)
+lista.sort(reverse=True)
+print(lista)
