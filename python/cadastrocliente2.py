@@ -1,13 +1,14 @@
 
-cadastrocliente=str(input("Você quer visualizar cadastro de clientes de produtos ou clientes"))
+cadastrocliente=str(input("Você quer visualizar cadastro de clientes de produtos ou clientes: "))
         
 if cadastrocliente=="produtos":
         #leitura do txt
-        data=open('listaproduto.txt','r')
-        data.read('listaproduto.txt')
-        print('listaproduto.txt')
+        with open('listaproduto.txt','r') as listproduto:
+                for i in listproduto:
+                        print(listproduto.read())
 
-elif cadastrocliente=="clientes: ":               
+elif cadastrocliente=="clientes":               
         #leitura do txt
-        data=open('listacliente.txt','r')
-        data.read('listacliente.txt')
+        with open('listacliente.txt','r') as listcliente:
+                for i in listcliente:
+                        print(listcliente.read())
