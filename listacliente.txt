@@ -1,0 +1,3 @@
+['Joao'], gmail
+['Pedro'], hotmail
+['Caio'], caio.gemail
