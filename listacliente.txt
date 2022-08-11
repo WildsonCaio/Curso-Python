@@ -1,9 +1,1 @@
-['Joao'], joao.gmail
-['José Paulo'], jp@hot
-['PEPE'],pepe@gmal
-['DIdi'],[didi@hot
-]['pepe'],[pepe@GGmail]
-['adri'],[@adri]
-['adri', 'pipi'],[@pipi]
-['Joaozinho'],[@joaozinho]
-['Joaozinho', 'DEDE'],[@dede]
+['Joao'],[joao@gmail]

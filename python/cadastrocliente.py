@@ -23,7 +23,6 @@ while True:
                                 with open('listacliente.txt','r') as listcliente:
                                         for i in listcliente:
                                                 print(listcliente.read())
-                                
 
         elif menu=="cadastrar":
                 #inserir produtos e clientes no .txt
