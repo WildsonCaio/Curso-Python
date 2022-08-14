@@ -6,7 +6,14 @@ letrausada = []
 tentativa = 6 #Quantidades de tentativas para acertar a palavra, fazer input tambem
 print(palavra)# quero ver qual palavra o choice está escolhendo
 
-while True: # condição de loop até condição parar]
+
+
+while True: # condição de loop até condição parar
+    
+    addpalavra=str (input("Insira palavra para ADICIONAR ou JOGAR para jogar: "))
+if addpalavra=="SAIR":
+	addpalavra.append(listaforca)
+	print(listaforca)
     
 	print(f"\nVocê usou as letras: {letrausada}")
 	print(f"\nChances: {tentativa}")
