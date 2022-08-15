@@ -12,6 +12,7 @@ def acelerar():
     return vel
 
 def desacelerar():
+    global vel
     vel-=5
 
 def informacoes():
@@ -22,8 +23,8 @@ def parar():
     dirigindo=True
     
 while True:
-    acelerar()
-    if acelerar>100:
-        print(vel)
-        
-    contador+=1
+    (acelerar())
+    print(vel)
+    if vel>100:
+        desacelerar()
+    #contador+=1
