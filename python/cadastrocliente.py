@@ -15,7 +15,6 @@ while True:
                 if cadastrocliente=="produtos":
                                 #leitura do txt
                                 with open('listaproduto.txt','r') as listproduto:
-                                        for i in listproduto:
                                                 print(listproduto.read())
 
                 elif cadastrocliente=="clientes":               
