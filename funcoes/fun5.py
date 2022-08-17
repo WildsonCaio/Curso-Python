@@ -4,4 +4,5 @@ def is_prime(number):
             return False
     return True
 
-print(is_prime(2))
+numero_primo = int (input('Insira numero para saber se é primo: '))
+print(is_prime(numero_primo))

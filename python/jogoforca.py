@@ -20,7 +20,7 @@ while True: #condição de loop até condição parar
 	for i in palavra:
 		if i in letrausada:#mostrar a palavra mascarada e revelar após acerto
 			print(i, end="")#end para não quebrar linha
-		#if letrausada in listaforca:
+		#if letrausada in listaforca: 
 			#break
 		else:
 			print('_',end="")#end para não quebrar linha
