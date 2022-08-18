@@ -7,10 +7,10 @@ class Retangulo:
     def calcular_area(self):
             self.comprimento=float(input("Insira comprimento: "))
             self.largura=float(input("Insira largura: "))
-            area= self.largura*self.largura
-            return (f"A area é: {area} seu comprimento é {self.comprimento} e sua largura é {self.largura}")
+            area_local = self.largura*self.largura
+
+            return (f"A area é: {area_local} seu comprimento é {self.comprimento} e sua largura é {self.largura}")
             
+
 Retangulo_1=Retangulo('comprimento','largura')
 print (Retangulo_1.calcular_area())
-
-
