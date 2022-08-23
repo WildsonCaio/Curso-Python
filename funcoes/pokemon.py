@@ -22,4 +22,5 @@ def Pokemon(nome):
     peso = (response['weight'])
     print(f"Nome: {name}\n{linha()}\nImagem: {image} \n{linha()}\nTipo: {tipo}\n{linha()} \nTamanho: {tamanho} centímetros\n{linha()} \nPeso: {peso} gramas\n{linha()}")
 nome =(input("Insira nome ou ID do pokemon: "))
+
 Pokemon(nome)
