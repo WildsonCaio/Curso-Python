@@ -11,17 +11,15 @@ class Pessoa:
     def nome(self):
         return self.__nome
 
-
     @property
     def vida(self):
         return self.__vida
     @vida.setter
     def vida(self,vida):
             self.__vida=vida
-    def tomarDano(self):
+    def perderVida(self):
         self.vida-=15
 
-        
     @property
     def energia(self):
         return self.__energia
@@ -30,7 +28,6 @@ class Pessoa:
             self.__energia=energia
     def perderEnergia(self):
         self.energia-=10
-        
 
     @property
     def mana(self):
@@ -40,7 +37,6 @@ class Pessoa:
             self.__mana=mana
     def perderMana(self):
         self.mana-=10
-        
 
     @property
     def fome(self):
@@ -52,10 +48,25 @@ class Pessoa:
         self.fome+=5
 
 
-Nome_1=Pessoa("TESTE",100,50,100,100)
-print (Nome_1.vida)
-print (Nome_1.nome)
+class Movimento:
+    def __init__(self,andar, correr, parar):
+        self.andar = andar
+        self.correr = correr
+        self.parar = parar
 
-Nome_1.tomarDano()
+
+class Ataque:
+    def __init__(self, chute, soco):
+        self.chute=chute
+        self.soco=soco
+    
+
+
+insira_nome=(input("Qual seu nome? "))
+
+Nome_1=Pessoa(insira_nome,100,100,100,100)
+
+Nome_1.perderVida()
+print (Nome_1.nome)
 print (Nome_1.vida)
         
