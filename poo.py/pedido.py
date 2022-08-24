@@ -8,7 +8,15 @@ class Pedido:
 
     def valortotal(self):
         for i in self.listaPedido:
-            print (i.produto.nomeproduto,(i.quantidade*Produto.valor))
+           
+            print (linha())
+            print(
+            f'Produto: {i.produto.nomeproduto}'
+            f'\nPreço: {i.produto.valor}'
+            f'\nCódigo: {i.produto.codigo} '
+            f'\nQuantidade: {i.quantidade} '
+            f'\nTotal: {(i.quantidade*i.produto.valor)} ')
+            print (linha())
     
 
 class Item:
@@ -17,7 +25,6 @@ class Item:
         self.produto=produto
         self.quantidade=quantidade
         
-
 class Produto:
 
     def __init__(self,valor,codigo,nomeproduto):
@@ -31,20 +38,11 @@ def linha():
 
 maca=Produto(2,"001",("Maça"))
 agua=Produto(5,"002","Água")
-coca=Produto(10,"003","Refrigerante")
+#insereProduto=Produto(input,input,input)
 
-tazo=Pedido()
-tazo.insereProduto(maca,5)
-tazo.insereProduto(agua,3)
-tazo.insereProduto(coca,7)
+adicionar_produto=Pedido(input("Insira nome do produto: "),(input("Insira quantidade do produto: ")))
+adicionar_produto.insereProduto(maca,5)
+adicionar_produto.insereProduto(agua,3)
+#
 
-tazo.valortotal() #chama função listar que está em pedido
-
-print (linha())
-print(
-f'Produto: {tazo.listaPedido[0].produto.nomeproduto}'
-f'\nPreço: {tazo.listaPedido[0].produto.valor}'
-f'\nCódigo: {tazo.listaPedido[0].produto.codigo} '
-f'\nQuantidade: {tazo.listaPedido[0].quantidade} '
-f'\ntotal: {tazo.listaPedido[0].quantidade*tazo.listaPedido[0].produto.valor} ')
-print (linha())
+adicionar_produto.valortotal() #chama função listar que está em pedido

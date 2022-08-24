@@ -54,7 +54,10 @@ class Movimento:
         self.correr = correr
         self.parar = parar
         self.esconder=esconder
-
+        #Movimento_1=Movimento(1,2,3,4)
+        if Movimento== "1"
+            return ("Você está andando")
+        
 
 class Ataque:
     def __init__(self, chute, soco):
@@ -66,7 +69,7 @@ insira_nome=(input("Qual seu nome? "))
 
 Nome_1=Pessoa(insira_nome,100,100,100,100)
 
-Movimento_1=Movimento(1,2,3,4)
+        
 
 Nome_1.perderVida()
 print (Nome_1.nome)
