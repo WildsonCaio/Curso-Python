@@ -1,38 +1,44 @@
 class Pedido:
+
     def __init__(self):
         self.listaPedido=[]
+
     def insereProduto(self,produto,quantidade):
         self.listaPedido.append(Item(produto,quantidade))
-    def listarpedido(self):
+
+    def valortotal(self):
         for i in self.listaPedido:
-            print (i.produto.nomeproduto,i.quantidade)
+            print (i.produto.nomeproduto,(i.quantidade*Produto.valor))
     
 
 class Item:
+
     def __init__(self,produto,quantidade):
         self.produto=produto
         self.quantidade=quantidade
         
 
 class Produto:
+
     def __init__(self,valor,codigo,nomeproduto):
         self.valor=valor
         self.codigo=codigo
         self.nomeproduto=nomeproduto
 
 def linha():
+
     return('-'*40)
 
 maca=Produto(2,"001",("Maça"))
-agua=Produto(5,"002","agua")
-coca=Produto(10,"003","coca")
+agua=Produto(5,"002","Água")
+coca=Produto(10,"003","Refrigerante")
 
 tazo=Pedido()
 tazo.insereProduto(maca,5)
 tazo.insereProduto(agua,3)
 tazo.insereProduto(coca,7)
 
-#tazo.listarpedido() chama função listar que está em pedido
+tazo.valortotal() #chama função listar que está em pedido
 
 print (linha())
 print(

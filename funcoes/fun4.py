@@ -13,7 +13,7 @@ def acelerar():
 
 def desacelerar():
     global vel
-    vel-=5
+    vel-=10
 
 def informacoes():
     print(f"Informações: {inf}")
@@ -25,6 +25,8 @@ def parar():
 while True:
     (acelerar())
     print(vel)
-    if vel>100:
+    if vel>=100:
         desacelerar()
+    
+   
     #contador+=1
