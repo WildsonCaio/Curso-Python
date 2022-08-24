@@ -49,22 +49,24 @@ class Pessoa:
 
 
 class Movimento:
-    def __init__(self,andar, correr, parar):
+    def __init__(self,andar, correr, parar,esconder):
         self.andar = andar
         self.correr = correr
         self.parar = parar
+        self.esconder=esconder
 
 
 class Ataque:
     def __init__(self, chute, soco):
         self.chute=chute
         self.soco=soco
-    
 
 
 insira_nome=(input("Qual seu nome? "))
 
 Nome_1=Pessoa(insira_nome,100,100,100,100)
+
+Movimento_1=Movimento(1,2,3,4)
 
 Nome_1.perderVida()
 print (Nome_1.nome)
