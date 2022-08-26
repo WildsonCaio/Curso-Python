@@ -29,5 +29,3 @@ def menu():
     
 while True:
     menu()
-
-    

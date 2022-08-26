@@ -1,4 +1,3 @@
-
 m = str ("M")
 f = str ("F")
 
@@ -12,4 +11,3 @@ elif sexo == f:
     
 elif sexo != f and sexo != m:
     print ("sexo invalido")
-

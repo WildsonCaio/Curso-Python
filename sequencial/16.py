@@ -1,7 +1,3 @@
-
-
-
-
 area=float(input("Qual o tamanho em metros quadrados da área a ser pintada? "))
 area = 1.1*area
 
@@ -27,6 +23,3 @@ print(f" Pode usar {galao:.0f} lata de 3.6L e custará {(galao*25):.2f} reais")
 print ("Opção de usar galão: ")
 print(f" Pode usar {lata:.0f} galão de 18L {(lata*80):.2f} reais")
 print ("---------------------------------------------------------------------")
-
-
-

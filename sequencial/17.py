@@ -28,5 +28,3 @@ if area <= 64.8:
 
 elif area > 54 and area > 108:
     print (f"{lata:.0f} lata de 18l. custará: {(lata*80):.2f} reais")
-
-

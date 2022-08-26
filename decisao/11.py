@@ -15,8 +15,6 @@ inc3 = 10/100
 inc4 = 5/100
 salario = float (input("Insira seu usuario "))
 
-
-
 if salario <= 280:
     print ("o salário antes do reajuste:" , (salario))
     print ("o percentual de aumento aplicado:" , (inc1*100),"%")

@@ -16,4 +16,3 @@ elif turno == noturno:
     
 elif turno != matutino and turno != vespertino and turno != noturno:
     print ("Esse é um turno inválido")
-
