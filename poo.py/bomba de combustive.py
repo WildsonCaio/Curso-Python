@@ -1,18 +1,30 @@
 class Bomba_Combustivel:
     def __init__(self,tipoCombustivel,valorLitro,quantidadeCombustivel):
-        self.tipodeCombustivel=tipoCombustivel
+        self.tipoCombustivel=tipoCombustivel
         self.valorLitro=valorLitro
         self.quantidadeCombustivel=quantidadeCombustivel 
 
-    def combustivel(self,combustivel):
-        self.tipodeCombustivel=combustivel
+    def abastecervalor(self,valor):
+        valor = valor/self.valorLitro
+        return valor
 
-    def preco(self,preco):
-        self.valorLitro=preco
+    def abastecerlitros(self,litros):
+        self.litros=litros
+        litros = litros*self.valorLitro
+        return litros
 
-    def litro(self,litros):
-        self.quantidadeCombustivel=litros
+    def atualizarcombustivelbomba(self):
+        self.quantidadeCombustivel = disponivel
+        disponivel=self.abastecerlitros(litros)+self.abastecervalor(valor)
+        return disponivel
 
-mostrarcombustivel=Bomba_Combustivel("etanol",10,150) #atribuindo combustivel,preço,quantidade
-mostrarcombustivel.combustivel("gasolina")
-print (mostrarcombustivel.combustivel()) #mostrar tipodeCombustivelClasse
+
+bomba1=Bomba_Combustivel("etanol",5,150) #atribuindo combustivel,preço,quantidade
+
+# print (bomba1.tipoCombustivel) #mostrar tipo de Combustivel da bomba
+# print (bomba1.valorLitro) #mostrar preço de Combustivel da bomba
+# print (bomba1.quantidadeCombustivel) #mostrar quantidade de Combustivel da bomba
+
+print (bomba1.abastecerlitros(5)) #mostra valor quando abastecido em litros
+print (bomba1.abastecervalor(5)) #mostra quantidade de litros quando abastecido com valor
+print (bomba1.atualizarcombustivelbomba()) #mostra quantiade de litros disponivel na bomba
