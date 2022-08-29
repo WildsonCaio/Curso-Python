@@ -14,5 +14,5 @@ class Bomba_Combustivel:
         self.quantidadeCombustivel=litros
 
 mostrarcombustivel=Bomba_Combustivel("etanol",10,150) #atribuindo combustivel,preço,quantidade
-mostrarcombustivel.tipodeCombustivel
-print (mostrarcombustivel.combustivel(combustivel)) #mostrar tipodeCombustivelClasse
+mostrarcombustivel.combustivel("gasolina")
+print (mostrarcombustivel.combustivel()) #mostrar tipodeCombustivelClasse
