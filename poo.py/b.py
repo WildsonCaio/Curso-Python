@@ -1,8 +1,12 @@
+import re
+
+
 class BombaDeCombustivel:
     def __init__(self,tipo,valor,qtd) -> None:
         self.tipo = tipo
         self.valor = valor
         self.qtd = qtd
+        
     def abastecerPorValor(self,dinheiro):
         abastecidoEmLitros = dinheiro/self.valor
         self.alterarQuantidadeCombustivel(-abastecidoEmLitros)
@@ -23,6 +27,7 @@ class BombaDeCombustivel:
         self.qtd += quantidade
 
 bomba = BombaDeCombustivel("Gasolina",5,1000)
+
 print(bomba.qtd)
 print(bomba.abastecerPorLitro(2))
 print(bomba.abastecerPorValor(20))
